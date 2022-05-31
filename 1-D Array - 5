@@ -1,0 +1,22 @@
+//let's first create a program without using any function to find out the largest one from all.
+
+#include<stdio.h>
+
+int main()
+{
+    int arr[10], i, large;
+    printf("Enter 10 Array Elements: ");
+    for(i=0; i<10; i++)
+        scanf("%d", &arr[i]);
+    i=0;
+    large = arr[i];
+    while(i<10)
+    {
+        if(large<arr[i])
+            large = arr[i];
+        i++;
+    }
+    printf("\nLargest Number = %d", large);
+    
+    return 0;
+}
